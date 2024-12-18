@@ -6,11 +6,16 @@
     <title>Gautam Prajapati|Resume</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=logout" />
+   
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    
     <script src="script.js"></script>
 </head>
 <body>
     <!-- header -->
-     <header>
+     <header">
 
         <nav class="navbar">
             <div class="brand">
@@ -20,16 +25,16 @@
      
         <ul class="links">
             <li>
-                <a href="#home">Home</a>
+                <a href="index.html#banner">Home</a>
             </li>
             <li>
-                <a href="#service">Service</a>
+                <a href="index.html#skills">Skills</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="index.html#about">About</a>
             </li>
             <li>
-                <a href="#Contact">Contact</a>
+                <a href="index.html#contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -37,7 +42,7 @@
      <!-- end header -->
 
      <!-- banner -->
-      <section class="banner">
+      <section class="banner" id="banner">
         <div class="overlay"></div>
         <h1  style="color: white;" class="heading">Full Stack React+Springboot</h1>
         <p style="color: white;">  minus quam dolores minima maxime ratione inventore voluptatum sit?</p>
@@ -47,7 +52,7 @@
       <!-- ends banner -->
 
       <!-- about -->
-       <section class="about">
+       <section class="about w-full" id="about" style="margin-bottom: 90px;">
         <div class="section_header">
             <h1 class="heading">About</h1>
         <p class="sub_heading">These things tell me more about me </p>
@@ -102,7 +107,7 @@
          <!-- End about -->
     <!-- summary Skills section -->
 
-    <section class="summary background-dark"style="padding: 50px;" >
+    <section class="summary background-dark"style="padding:2rem"  id="skills">
         <div class="d-flex flex-col gap-20 item-center " >
             <h1 class="heading">My Skills</h1>
         <p class="sub_heading">These things tell me more about My Skills </p>
@@ -192,7 +197,7 @@
 
 
     <!-- contact section -->
-     <section class="contact-me" style="padding: 50px;">
+     <section class="contact-me" style="padding: 50px;" id="contact">
         <div class="d-flex flex-col gap-20 item-center " >
             <h1 class="heading">Contact Me</h1>
         <p class="sub_heading">These things tell me more about My Skills </p>
@@ -201,8 +206,8 @@
            </div>
         </div>
 
-        <div class="d-flex jutify-">
-            <div class="w-full test-border">
+        <div class="d-flex jutify-center flex-row">
+            <div class="w-full p-40">
                  <!-- left:map -->
                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6994.791062501278!2d77.15104964136061!3d28.76745925708143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d004f845ef1e5%3A0xb20d091b5dd6c9ee!2sKushak%20No%202%2C%20Kadipur%20Village%2C%20Delhi!5e0!3m2!1sen!2sin!4v1734412480867!5m2!1sen!2sin"
                     class="w-full p-20"
@@ -233,11 +238,101 @@
                             <label for="message">Message</label>
                             <textarea name="" id=""></textarea>
                         </div>
+                        <div class="d-flex  gap-20 justify-center item-center m-top-20">
+                            <button class="submit-button button" type="submit">Send Messege</button>
+                            <button class="reset-button button" type="reset">Reset</button>
+                        </div>
                     </form>
                  </div>
             </div>
         </div>
      </section>
+
+     <!-- End Contact Section -->
+
+
+
+     <!-- footer section -->
+      <section class="my-footer w-full" style="padding: 50px; background-color: rgb(144, 154, 154);">
+        <div class="d-flex gap-10 ">
+            <div class=" w-full">
+                <h1>Gautam Prajapati</h1>
+                <p>Swaroop Nagar</p>
+                <p>Kushak No.2 Delhi 36</p>
+            </div>
+            <div class=" w-full">
+                <div class=" w-full">
+                    <h1>Gautam Prajapati</h1>
+                    <p>Swaroop Nagar</p>
+                    <p>Kushak No.2 Delhi 36</p>
+                </div>
+            </div>
+            <div class=" w-full">
+                <div class=" w-full">
+                    <h1>Gautam Prajapati</h1>
+                    <p>Swaroop Nagar</p>
+                    <p>Kushak No.2 Delhi 36</p>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <hr style="margin:  1rem 0; width: 100%; border: 1px solid #000;">
+        </div>
+        <div>
+            <!-- horizontal bar -->
+          
+           <!-- horizontal bar -->
+
+               <div class="d-flex item-center justify-center gap-20">
+                <div class="w-full" >
+                    <ul class="d-flex item-center justify-center gap-10" >
+                       <li>
+                        <a style="text-decoration: none;" href="https://www.linkedin.com" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                       </li>
+                        <li>
+                            <a style="text-decoration: none;" href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a  style="text-decoration: none;"href="https://www.github.com "target="_blank">
+                                <i class="fa-brands fa-github"></i> Github
+                            </a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;" href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <p> &copy; 2024 <a  style="text-decoration: none;"href="https://www.yourwebsite.com">www.crackteck.com</a>. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="w-full ">
+                    <ul  >
+                        <li><i class="fa-solid fa-phone"></i>+919599999999</li>
+                        <li><i class="fa-solid fa-phone"></i>+919599999999</li>
+                        <li><i class="fa-solid fa-tty"></i>011343434</li>
+                        <li><i class="fa-solid fa-envelope"></i>info.crackteck@gmail.com</li>
+                    </ul>
+
+                </div>
+                <div class="d-flex item-center justify-center gap-10 w-full">
+                    <div id="footer-book">
+                        <img src="/images/book.png" alt="book">
+                    </div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, omnis?</div>
+                </div>
+               </div>
+            </div> 
+
+
+        </div>
+      </section>
 
 </body>
 </html>

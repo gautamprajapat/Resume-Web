@@ -13,17 +13,19 @@ html {
   p {
     color: rgb(51, 50, 50);
   }
-.navbar{
-
-  display: flex;
-  background-color: #e9ecf0;
-  justify-content: space-around;
-  color: #212121;
-  align-items: center;
-  height: 5rem;
-  border-bottom: 1px solid #e2e2e2;
-  box-shadow: 0 8px 6px -6px black;
-
+  .navbar {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    background-color: #e9ecf0;
+    justify-content: space-around;
+    color: #212121;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .links{
@@ -34,6 +36,11 @@ html {
     height: 100%;
     align-items: center;
   
+}
+.navbar{
+    background: linear-gradient(90deg, #7b90a2, #4da9ad); /* Gradient background */
+    padding: 10px 20px; /* Add some padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 .navbar .li{
     height: inherit;
@@ -120,36 +127,22 @@ html {
 }
 
 .button {
-    font-size: 1.5rem; /* Adjust font size for better readability */
-    padding: 12px 20px; /* Add balanced padding */
-    border-radius: 20px; /* Rounded corners */
-    background: linear-gradient(45deg, #00C9FF, #92FE9D); /* Gradient background */
-    border: none; /* Remove border */
-    color: white; /* Text color */
-    font-weight: bold; /* Emphasize text */
-    text-transform: uppercase; /* Make text uppercase */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transition: all 0.3s ease; /* Smooth hover transition */
-    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
   }
   
   .button:hover {
-    background: linear-gradient(45deg, #92FE9D, #00C9FF); /* Reverse gradient */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: rgb(11, 142, 142);
   }
-  
-  .button:active {
-    transform: scale(1); /* Reset zoom when clicked */
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
-  }
-button:hover{
-    background-color: rgb(116, 226, 226);
-}
-.border-container{
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.border-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 .border{
     height: 2px;
@@ -164,6 +157,13 @@ button:hover{
     align-items: center;
     gap: 15px;
     padding: 15px;
+
+}
+.about{
+   
+    height: 100vh;
+    /* background: linear-gradient(90deg, #aea6a3, #968f88, #deb887, #e6e1dd); */
+    
 
 }
 
@@ -195,6 +195,11 @@ button:hover{
  height: 70% ;
  
 
+}
+
+.contact-me{
+ 
+  background: url(https://www.shutterstock.com/shutterstock/photos/740444881/display_1500/stock-photo-contact-us-hand-of-businessman-holding-mobile-smartphone-with-mail-phone-email-icon-cutomer-740444881.jpg);
 }
 
 
@@ -343,14 +348,67 @@ ul{
 .background-dark{
     background-color: #cacaca;;
 }
+.form-container{
 
 
-.form-input{
+}
+
+
+.form-container .form-input{
  display: flex;
  flex-direction: column;
+ gap: 10px;
+ margin-top: 8px;
+
+ 
 }
 
 
-.form-container input[type="text"],input[type="password"],textarea{
+.form-container input[type="text"], input[type="password"], textarea {
     width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background: #e2e2e2;
 }
+
+
+.submit-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .reset-button {
+    background: orange;
+  }
+
+.m-top-20{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .heading {
+      font-size: 1.5rem;
+      padding: 0 10px;
+      /* border: 1px solid red; */
+    }
+  
+    .sub_heading{
+      font-size: 1rem;
+      padding: 5px 10px;
+      text-align: center;
+    }
+  }
+
+
+  #footer-book img{
+    height: 3rem;
+    width: 3rem;
+  }
+
+
+ 
+
+
