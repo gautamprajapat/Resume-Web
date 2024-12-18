@@ -92,6 +92,7 @@ html {
     position: relative;
     
     background-image: url("images/backgroundImage.jpg");
+    background-repeat: no-repeat;
     height: 80vh;
     display: flex;
     flex-direction: column;
